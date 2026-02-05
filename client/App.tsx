@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navigation from './components/Navigation'
-import Footer from './components/Footer'
-import Home from './pages/Home'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -16,5 +16,5 @@ export default function App() {
         <Footer />
       </div>
     </Router>
-  )
+  );
 }

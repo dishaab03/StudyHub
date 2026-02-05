@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from 'lucide-react'
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -13,15 +13,22 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Your Learning Companion</span>
+              <span className="text-sm font-medium text-primary">
+                Your Learning Companion
+              </span>
             </div>
 
             <div>
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground mb-4 leading-tight">
-                Organize Your <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Learning</span>
+                Organize Your{" "}
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  Learning
+                </span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Find, organize, and share study materials all in one place. StudyHub helps students excel by keeping everything you need accessible and well-organized.
+                Find, organize, and share study materials all in one place.
+                StudyHub helps students excel by keeping everything you need
+                accessible and well-organized.
               </p>
             </div>
 
@@ -70,5 +77,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

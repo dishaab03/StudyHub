@@ -1,7 +1,7 @@
-import Hero from '../sections/Hero'
-import SubjectsGrid from '../sections/SubjectsGrid'
-import FeaturedNotes from '../sections/FeaturedNotes'
-import CallToAction from '../sections/CallToAction'
+import Hero from "../sections/Hero";
+import SubjectsGrid from "../sections/SubjectsGrid";
+import FeaturedNotes from "../sections/FeaturedNotes";
+import CallToAction from "../sections/CallToAction";
 
 export default function Home() {
   return (
@@ -11,5 +11,5 @@ export default function Home() {
       <FeaturedNotes />
       <CallToAction />
     </div>
-  )
+  );
 }

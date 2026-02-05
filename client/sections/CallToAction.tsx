@@ -1,25 +1,26 @@
-import { CheckCircle, ArrowRight } from 'lucide-react'
+import { CheckCircle, ArrowRight } from "lucide-react";
 
 const FEATURES = [
-  'Organized notes from expert tutors',
-  'Download and use offline',
-  'Search across all subjects',
-  'Community ratings and reviews',
-  'Mobile-friendly studying',
-  'Free access to quality content'
-]
+  "Organized notes from expert tutors",
+  "Download and use offline",
+  "Search across all subjects",
+  "Community ratings and reviews",
+  "Mobile-friendly studying",
+  "Free access to quality content",
+];
 
 export default function CallToAction() {
   return (
     <section className="py-20 md:py-32 bg-gradient-to-br from-primary via-secondary to-accent relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-white/10 rounded-full blur-3xl opacity-20"></div>
-      
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-white mb-4">Start Your Learning Journey Today</h2>
           <p className="text-xl text-white/90 mb-8">
-            Join thousands of students who are already using StudyHub to organize their study materials and excel in their academics.
+            Join thousands of students who are already using StudyHub to
+            organize their study materials and excel in their academics.
           </p>
         </div>
 
@@ -50,5 +51,5 @@ export default function CallToAction() {
         </p>
       </div>
     </section>
-  )
+  );
 }

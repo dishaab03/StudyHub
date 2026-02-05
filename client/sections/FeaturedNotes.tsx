@@ -1,80 +1,86 @@
-import { FileText, Download, Star } from 'lucide-react'
-import NoteCard from '../components/NoteCard'
+import { FileText, Download, Star } from "lucide-react";
+import NoteCard from "../components/NoteCard";
 
 const FEATURED_NOTES = [
   {
     id: 1,
-    title: 'Calculus Fundamentals',
-    subject: 'Mathematics',
-    author: 'Dr. Sarah Chen',
-    description: 'Complete guide to limits, derivatives, and integrals with solved examples.',
+    title: "Calculus Fundamentals",
+    subject: "Mathematics",
+    author: "Dr. Sarah Chen",
+    description:
+      "Complete guide to limits, derivatives, and integrals with solved examples.",
     pages: 48,
     downloads: 2543,
     rating: 4.8,
-    category: 'Advanced',
-    thumbnail: 'bg-gradient-to-br from-blue-400 to-blue-600'
+    category: "Advanced",
+    thumbnail: "bg-gradient-to-br from-blue-400 to-blue-600",
   },
   {
     id: 2,
-    title: 'Organic Chemistry Reactions',
-    subject: 'Science',
-    author: 'Prof. James Wilson',
-    description: 'Comprehensive notes on organic reactions, mechanisms, and synthesis strategies.',
+    title: "Organic Chemistry Reactions",
+    subject: "Science",
+    author: "Prof. James Wilson",
+    description:
+      "Comprehensive notes on organic reactions, mechanisms, and synthesis strategies.",
     pages: 62,
     downloads: 1898,
     rating: 4.9,
-    category: 'Advanced',
-    thumbnail: 'bg-gradient-to-br from-purple-400 to-purple-600'
+    category: "Advanced",
+    thumbnail: "bg-gradient-to-br from-purple-400 to-purple-600",
   },
   {
     id: 3,
-    title: 'Web Development with React',
-    subject: 'Programming',
-    author: 'Alex Rodriguez',
-    description: 'Modern React patterns, hooks, and best practices for building scalable apps.',
+    title: "Web Development with React",
+    subject: "Programming",
+    author: "Alex Rodriguez",
+    description:
+      "Modern React patterns, hooks, and best practices for building scalable apps.",
     pages: 71,
     downloads: 3124,
     rating: 4.7,
-    category: 'Intermediate',
-    thumbnail: 'bg-gradient-to-br from-green-400 to-green-600'
+    category: "Intermediate",
+    thumbnail: "bg-gradient-to-br from-green-400 to-green-600",
   },
   {
     id: 4,
-    title: 'World War II Timeline',
-    subject: 'History',
-    author: 'Emily Thompson',
-    description: 'Detailed timeline and analysis of major events, key figures, and turning points.',
+    title: "World War II Timeline",
+    subject: "History",
+    author: "Emily Thompson",
+    description:
+      "Detailed timeline and analysis of major events, key figures, and turning points.",
     pages: 45,
     downloads: 1654,
     rating: 4.6,
-    category: 'Intermediate',
-    thumbnail: 'bg-gradient-to-br from-amber-400 to-amber-600'
+    category: "Intermediate",
+    thumbnail: "bg-gradient-to-br from-amber-400 to-amber-600",
   },
   {
     id: 5,
-    title: 'Spanish Verb Conjugations',
-    subject: 'Languages',
-    author: 'Maria Garcia',
-    description: 'Complete reference guide for regular and irregular verb conjugations.',
+    title: "Spanish Verb Conjugations",
+    subject: "Languages",
+    author: "Maria Garcia",
+    description:
+      "Complete reference guide for regular and irregular verb conjugations.",
     pages: 38,
     downloads: 2201,
     rating: 4.8,
-    category: 'Beginner',
-    thumbnail: 'bg-gradient-to-br from-pink-400 to-pink-600'
+    category: "Beginner",
+    thumbnail: "bg-gradient-to-br from-pink-400 to-pink-600",
   },
   {
     id: 6,
-    title: 'Physics Mechanics Guide',
-    subject: 'Science',
-    author: 'Dr. Robert Lee',
-    description: 'Essential concepts in classical mechanics with problem-solving approaches.',
+    title: "Physics Mechanics Guide",
+    subject: "Science",
+    author: "Dr. Robert Lee",
+    description:
+      "Essential concepts in classical mechanics with problem-solving approaches.",
     pages: 56,
     downloads: 2876,
     rating: 4.9,
-    category: 'Intermediate',
-    thumbnail: 'bg-gradient-to-br from-cyan-400 to-cyan-600'
-  }
-]
+    category: "Intermediate",
+    thumbnail: "bg-gradient-to-br from-cyan-400 to-cyan-600",
+  },
+];
 
 export default function FeaturedNotes() {
   return (
@@ -85,7 +91,8 @@ export default function FeaturedNotes() {
           <div>
             <h2 className="mb-4">Featured Study Materials</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              Curated collection of the most popular and highly-rated study notes from our community.
+              Curated collection of the most popular and highly-rated study
+              notes from our community.
             </p>
           </div>
           <button className="hidden sm:inline-flex px-6 py-3 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors">
@@ -108,5 +115,5 @@ export default function FeaturedNotes() {
         </div>
       </div>
     </section>
-  )
+  );
 }

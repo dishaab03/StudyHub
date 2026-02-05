@@ -1,28 +1,28 @@
-import { ArrowRight, LucideIcon } from 'lucide-react'
+import { ArrowRight, LucideIcon } from "lucide-react";
 
 interface Subject {
-  id: number
-  name: string
-  icon: LucideIcon
-  description: string
-  color: string
-  count: number
+  id: number;
+  name: string;
+  icon: LucideIcon;
+  description: string;
+  color: string;
+  count: number;
 }
 
 interface SubjectCardProps {
-  subject: Subject
+  subject: Subject;
 }
 
 export default function SubjectCard({ subject }: SubjectCardProps) {
-  const Icon = subject.icon
+  const Icon = subject.icon;
 
   const colorClasses = {
-    primary: 'bg-primary/10 text-primary border-primary/20',
-    secondary: 'bg-secondary/10 text-secondary border-secondary/20',
-    accent: 'bg-accent/10 text-accent border-accent/20'
-  }
+    primary: "bg-primary/10 text-primary border-primary/20",
+    secondary: "bg-secondary/10 text-secondary border-secondary/20",
+    accent: "bg-accent/10 text-accent border-accent/20",
+  };
 
-  const colorClass = colorClasses[subject.color as keyof typeof colorClasses]
+  const colorClass = colorClasses[subject.color as keyof typeof colorClasses];
 
   return (
     <button className="group relative bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left overflow-hidden">
@@ -31,7 +31,9 @@ export default function SubjectCard({ subject }: SubjectCardProps) {
 
       <div className="relative z-10 space-y-4">
         {/* Icon */}
-        <div className={`w-12 h-12 rounded-lg flex items-center justify-center border ${colorClass}`}>
+        <div
+          className={`w-12 h-12 rounded-lg flex items-center justify-center border ${colorClass}`}
+        >
           <Icon className="w-6 h-6" />
         </div>
 
@@ -54,5 +56,5 @@ export default function SubjectCard({ subject }: SubjectCardProps) {
         </div>
       </div>
     </button>
-  )
+  );
 }

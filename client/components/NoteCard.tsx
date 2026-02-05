@@ -1,27 +1,29 @@
-import { Download, Star, FileText } from 'lucide-react'
+import { Download, Star, FileText } from "lucide-react";
 
 interface Note {
-  id: number
-  title: string
-  subject: string
-  author: string
-  description: string
-  pages: number
-  downloads: number
-  rating: number
-  category: string
-  thumbnail: string
+  id: number;
+  title: string;
+  subject: string;
+  author: string;
+  description: string;
+  pages: number;
+  downloads: number;
+  rating: number;
+  category: string;
+  thumbnail: string;
 }
 
 interface NoteCardProps {
-  note: Note
+  note: Note;
 }
 
 export default function NoteCard({ note }: NoteCardProps) {
   return (
     <div className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
       {/* Thumbnail */}
-      <div className={`h-40 ${note.thumbnail} relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
+      <div
+        className={`h-40 ${note.thumbnail} relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}
+      >
         <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
           <FileText className="w-12 h-12 text-white opacity-60" />
         </div>
@@ -73,5 +75,5 @@ export default function NoteCard({ note }: NoteCardProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }

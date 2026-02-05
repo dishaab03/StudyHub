@@ -1,16 +1,19 @@
-import { Link } from 'react-router-dom'
-import { Search, BookOpen } from 'lucide-react'
-import { useState } from 'react'
+import { Link } from "react-router-dom";
+import { Search, BookOpen } from "lucide-react";
+import { useState } from "react";
 
 export default function Navigation() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 font-bold text-2xl text-primary hover:opacity-80 transition-opacity">
+          <Link
+            to="/"
+            className="flex items-center gap-2 font-bold text-2xl text-primary hover:opacity-80 transition-opacity"
+          >
             <BookOpen className="w-7 h-7" />
             <span>StudyHub</span>
           </Link>
@@ -56,5 +59,5 @@ export default function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }

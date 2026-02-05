@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 84% 5%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 5%;
+    
+    --primary: 219 89% 51%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 256 80% 56%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 220 13% 91%;
+    --muted-foreground: 217 11% 34%;
+    
+    --accent: 262 80% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 219 89% 51%;
+    
+    --radius: 12px;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 84% 5%;
+    --sidebar-primary: 219 89% 51%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 262 80% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 219 89% 51%;
+  }
+
+  .dark {
+    --background: 222 84% 5%;
+    --foreground: 0 0% 100%;
+    
+    --card: 222 84% 10%;
+    --card-foreground: 0 0% 100%;
+    
+    --primary: 219 89% 51%;
+    --primary-foreground: 222 84% 5%;
+    
+    --secondary: 256 80% 56%;
+    --secondary-foreground: 222 84% 5%;
+    
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 14% 65%;
+    
+    --accent: 262 80% 50%;
+    --accent-foreground: 222 84% 5%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 222 84% 5%;
+    
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 219 89% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-4xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply text-xl font-semibold;
+  }
+
+  p {
+    @apply text-base leading-relaxed;
+  }
+}
